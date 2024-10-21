@@ -1,0 +1,112 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  background: #212121;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-family: sans-serif;
+}
+
+.doors {
+  display: flex;
+}
+
+.door {
+  background: #fafafa;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.4) inset;
+  width: 100px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 1ex;
+  margin: 1ch;
+}
+
+.boxes {
+  transition: transform 1s ease-in-out;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.buttons {
+  margin: 1rem 0 2rem 0;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 0 0.2rem 0 0.2rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 3px 3px 10px hsla(0, 0%, 100%, 0.52);
+}
+
+.info {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.rule {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.totalWin {
+  text-align: left;
+  font-size: 1.5rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+input {
+  width: 150px;
+  font-size: 1.2rem;
+  margin: 0 0.2rem 0 0.2rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 3px 3px 10px hsla(0, 0%, 100%, 0.52);
+}
+.glow {
+  box-shadow: 0 0 10px 5px yellow;
+  border: 2px solid yellow;
+  transition: box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+.glowGreen {
+  box-shadow: 0 0 10px 5px green;
+  border: 2px solid green;
+  transition: box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+}
